@@ -5,11 +5,11 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Joker-Di/devidcloud.git
-          search-paths: devid-config/src/main/resources/{application}
-          username: Joker-Di
-          password: dong2619
+          uri: https://github.com/Joker-Di/peace-cloud.git
+          search-paths: peace-config/src/main/resources/{application}
+          username:
+          password:
 
 server:
-  port: 6002
+  port: 6001
 
