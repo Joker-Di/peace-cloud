@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="peace-cloud" />
+        <module name="peace-config" />
+        <module name="peace-config-client" />
+        <module name="peace-eureka" />
+        <module name="peace-eureka-client" />
+        <module name="peace-feign" />
+        <module name="peace-ribbon" />
+        <module name="peace-zuul" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

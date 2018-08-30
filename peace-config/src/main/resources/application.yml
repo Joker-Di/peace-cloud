@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: peace-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Joker-Di/devidcloud.git
+          search-paths: devid-config/src/main/resources/{application}
+          username: Joker-Di
+          password: dong2619
+
+server:
+  port: 6001
+

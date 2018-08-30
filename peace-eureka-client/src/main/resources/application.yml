@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: peace-eureka-client
+
+server:
+  port: 2001
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1000/eureka/

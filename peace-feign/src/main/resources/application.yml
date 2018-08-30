@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: peace-feign
+
+server:
+  port: 4000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1000/eureka/
+
+feign:
+  hystrix:
+    enabled: true
+
