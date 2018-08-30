@@ -17,3 +17,5 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+    serviceUrl:
+      defaultZone: http://peace:1qaz2wsx@${eureka.instance.hostname}:${server.port}/eureka/
