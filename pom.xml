@@ -15,6 +15,7 @@
         <module>peace-feign</module>
         <module>peace-zuul</module>
         <module>peace-config</module>
+        <module>peace-getway</module>
     </modules>
 
     <build>
