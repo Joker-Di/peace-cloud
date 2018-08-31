@@ -3,6 +3,7 @@ spring:
     name: peace-getway
 server:
   port: 20200
+
 eureka:
     client:
       serviceUrl:
