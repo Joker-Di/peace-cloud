@@ -6,6 +6,7 @@
 
     <groupId>pep.pesoftware</groupId>
     <artifactId>peace-cloud</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
@@ -16,6 +17,8 @@
         <module>peace-zuul</module>
         <module>peace-config</module>
         <module>peace-getway</module>
+        <module>peace-common</module>
+        <module>peace-framework</module>
     </modules>
 
     <build>

@@ -3,11 +3,13 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/p-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/peace-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/peace-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/peace-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/peace-config-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/peace-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/peace-eureka-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/peace-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/peace-framework" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/peace-framework" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/peace-getway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/peace-ribbon" charset="UTF-8" />

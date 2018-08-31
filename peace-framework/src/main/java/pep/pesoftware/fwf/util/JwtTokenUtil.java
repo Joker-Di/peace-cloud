@@ -1,11 +1,11 @@
 package pep.pesoftware.fwf.util;
 
-import pep.pesoftware.coc.jwt.JWTUserInfo;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.joda.time.DateTime;
+import pep.pesoftware.coc.jwt.JWTUserInfo;
 
 import javax.crypto.spec.SecretKeySpec;
 import javax.xml.bind.DatatypeConverter;
