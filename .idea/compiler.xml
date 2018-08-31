@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="peace-cloud" />
+        <module name="peace-common" />
         <module name="peace-config" />
         <module name="peace-config-client" />
         <module name="peace-eureka" />
         <module name="peace-eureka-client" />
         <module name="peace-feign" />
+        <module name="peace-framework" />
         <module name="peace-getway" />
         <module name="peace-ribbon" />
         <module name="peace-web" />
