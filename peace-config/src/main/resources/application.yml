@@ -3,8 +3,8 @@ server:
 
 eureka:
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    registerWithEureka: false
+    fetchRegistry: false
 
 spring:
   application:
@@ -15,5 +15,5 @@ spring:
         git:
           uri: https://github.com/Joker-Di/peace-cloud.git
           search-paths: peace-config/src/main/resources/{application}
-          username:
-          password:
+          username: Joker-Di
+          password: dong2619
