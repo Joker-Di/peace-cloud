@@ -1,11 +1,11 @@
+server:
+  port: 8762
+
 spring:
   application:
     name: peace-eureka-client
 
-server:
-  port: 2001
-
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:1000/eureka/
+      defaultZone: http://localhost:20000/eureka/

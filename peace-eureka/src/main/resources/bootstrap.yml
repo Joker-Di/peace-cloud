@@ -2,6 +2,11 @@ spring:
   application:
     name: peace-eureka
 
+  security:
+    user:
+      name: peace
+      password: 1qaz2wsx
+
 server:
   port: 20000
 
@@ -13,3 +18,4 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+# http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/

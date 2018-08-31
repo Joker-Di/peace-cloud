@@ -18,5 +18,8 @@
         <module name="peace-zuul" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="p-eureka" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
