@@ -2,11 +2,6 @@ spring:
   application:
     name: peace-eureka
 
-  security:
-    user:
-      name: peace
-      password: 1qaz2wsx
-
 server:
   port: 20000
 
