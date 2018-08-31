@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: peace-getway
+server:
+  port: 20200
+eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://peace:1qaz2wsx@localhost:20000/eureka/
+
+zuul:
+  routes:
+    peace-web:
+      path: /web/**
+      serviceid: PEACE-WEB
+  prefix: /api
+feign:
+  hystrix:
+    enabled: true
+ribbon:
+ ReadTimeout: 20000
+ ConnectTimeout: 20000
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000

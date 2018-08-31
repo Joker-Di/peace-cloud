@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: peace-web
+server:
+  port: 20300

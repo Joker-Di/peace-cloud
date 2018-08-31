@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/peace-zuul/pom.xml" />
         <option value="$PROJECT_DIR$/peace-config/pom.xml" />
         <option value="$PROJECT_DIR$/peace-config-client/pom.xml" />
+        <option value="$PROJECT_DIR$/peace-getway/pom.xml" />
+        <option value="$PROJECT_DIR$/peace-web/pom.xml" />
       </list>
     </option>
   </component>

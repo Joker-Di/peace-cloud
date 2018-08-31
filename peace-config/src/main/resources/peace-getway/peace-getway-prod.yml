@@ -1,0 +1,8 @@
+custom:
+  token:
+    secret:
+      key: 12345678901
+    expire: 86400
+    confirmExpire : 86400
+  session:
+    timeOut: 3600

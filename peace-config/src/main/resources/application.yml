@@ -1,3 +1,11 @@
+server:
+  port: 20100
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
 spring:
   application:
     name: peace-config
@@ -9,11 +17,3 @@ spring:
           search-paths: peace-config/src/main/resources/{application}
           username:
           password:
-
-server:
-  port: 20100
-
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
