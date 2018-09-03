@@ -4,6 +4,20 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/clouddo?characterEncoding=utf8&useSSL=false&autoReconnect=true&failOverReadOnly=false&maxReconnects=10
     username: root
     password: root
+
+peace:
+  redis:
+    host:
+      ip: 127.0.0.1
+      port: 6379
+      password:
+    pool:
+      maxActive: 100
+      maxIdle: 10
+      maxWait: 50
+      testOnBorrow: true
+      testOnReturn: true
+
 custom:
   token:
     secret:
