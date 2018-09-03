@@ -7,6 +7,6 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-@MapperScan(basePackages = "com.homie.app.framework.repository.mapper")
+@MapperScan(basePackages = "pep.pesoftware.fwf.repository.mapper")
 public @interface EnableDB {
 }
