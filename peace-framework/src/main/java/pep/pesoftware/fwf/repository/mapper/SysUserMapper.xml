@@ -37,7 +37,7 @@
     delete from sys_user
     where user_id = #{userId,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.example.demo.model.SysUser" >
+  <insert id="insert" parameterType="pep.pesoftware.fwf.repository.model.SysUser" >
     insert into sys_user (user_id, username, name, 
       password, dept_id, email, 
       mobile, status, user_id_create, 
@@ -53,7 +53,7 @@
       #{hobby,jdbcType=VARCHAR}, #{province,jdbcType=VARCHAR}, #{city,jdbcType=VARCHAR}, 
       #{district,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.example.demo.model.SysUser" >
+  <insert id="insertSelective" parameterType="pep.pesoftware.fwf.repository.model.SysUser" >
     insert into sys_user
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="userId != null" >
@@ -174,7 +174,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.example.demo.model.SysUser" >
+  <update id="updateByPrimaryKeySelective" parameterType="pep.pesoftware.fwf.repository.model.SysUser" >
     update sys_user
     <set >
       <if test="username != null" >
@@ -234,7 +234,7 @@
     </set>
     where user_id = #{userId,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.example.demo.model.SysUser" >
+  <update id="updateByPrimaryKey" parameterType="pep.pesoftware.fwf.repository.model.SysUser" >
     update sys_user
     set username = #{username,jdbcType=VARCHAR},
       name = #{name,jdbcType=VARCHAR},

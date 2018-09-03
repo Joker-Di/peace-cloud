@@ -29,7 +29,7 @@
     delete from sys_menu
     where menu_id = #{menuId,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.example.demo.model.SysMenu" >
+  <insert id="insert" parameterType="pep.pesoftware.fwf.repository.model.SysMenu" >
     insert into sys_menu (menu_id, parent_id, name, 
       url, perms, type, icon, 
       order_num, gmt_create, component, 
@@ -39,7 +39,7 @@
       #{orderNum,jdbcType=INTEGER}, #{gmtCreate,jdbcType=TIMESTAMP}, #{component,jdbcType=VARCHAR}, 
       #{gmtModified,jdbcType=TIMESTAMP}, #{redirect,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.example.demo.model.SysMenu" >
+  <insert id="insertSelective" parameterType="pep.pesoftware.fwf.repository.model.SysMenu" >
     insert into sys_menu
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="menuId != null" >
@@ -118,7 +118,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.example.demo.model.SysMenu" >
+  <update id="updateByPrimaryKeySelective" parameterType="pep.pesoftware.fwf.repository.model.SysMenu" >
     update sys_menu
     <set >
       <if test="parentId != null" >
@@ -157,7 +157,7 @@
     </set>
     where menu_id = #{menuId,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.example.demo.model.SysMenu" >
+  <update id="updateByPrimaryKey" parameterType="pep.pesoftware.fwf.repository.model.SysMenu" >
     update sys_menu
     set parent_id = #{parentId,jdbcType=BIGINT},
       name = #{name,jdbcType=VARCHAR},

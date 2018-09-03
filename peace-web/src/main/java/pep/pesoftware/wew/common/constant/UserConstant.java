@@ -21,7 +21,7 @@ public class UserConstant {
     /**
      * 存放登录成功后的USER信息
      */
-    public static String USER_SESSION_KEY = "homie_user_";
+    public static String USER_SESSION_KEY = "peace_user_";
 
     /**
      * 已删除

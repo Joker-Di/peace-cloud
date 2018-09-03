@@ -26,6 +26,11 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>pep.pesoftware.coc</groupId>
+            <artifactId>peace-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/com.netflix.hystrix/hystrix-core -->
         <dependency>
             <groupId>com.netflix.hystrix</groupId>

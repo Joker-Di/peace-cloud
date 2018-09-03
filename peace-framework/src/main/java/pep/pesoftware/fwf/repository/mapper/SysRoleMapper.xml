@@ -23,7 +23,7 @@
     delete from sys_role
     where role_id = #{roleId,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.example.demo.model.SysRole" >
+  <insert id="insert" parameterType="pep.pesoftware.fwf.repository.model.SysRole" >
     insert into sys_role (role_id, role_name, role_sign, 
       remark, user_id_create, gmt_create, 
       gmt_modified)
@@ -31,7 +31,7 @@
       #{remark,jdbcType=VARCHAR}, #{userIdCreate,jdbcType=BIGINT}, #{gmtCreate,jdbcType=TIMESTAMP}, 
       #{gmtModified,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.example.demo.model.SysRole" >
+  <insert id="insertSelective" parameterType="pep.pesoftware.fwf.repository.model.SysRole" >
     insert into sys_role
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="roleId != null" >
@@ -80,7 +80,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.example.demo.model.SysRole" >
+  <update id="updateByPrimaryKeySelective" parameterType="pep.pesoftware.fwf.repository.model.SysRole" >
     update sys_role
     <set >
       <if test="roleName != null" >
@@ -104,7 +104,7 @@
     </set>
     where role_id = #{roleId,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.example.demo.model.SysRole" >
+  <update id="updateByPrimaryKey" parameterType="pep.pesoftware.fwf.repository.model.SysRole" >
     update sys_role
     set role_name = #{roleName,jdbcType=VARCHAR},
       role_sign = #{roleSign,jdbcType=VARCHAR},

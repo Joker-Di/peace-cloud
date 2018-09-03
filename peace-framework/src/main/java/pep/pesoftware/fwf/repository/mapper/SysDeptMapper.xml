@@ -21,13 +21,13 @@
     delete from sys_dept
     where dept_id = #{deptId,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.example.demo.model.SysDept" >
+  <insert id="insert" parameterType="pep.pesoftware.fwf.repository.model.SysDept" >
     insert into sys_dept (dept_id, parent_id, name, 
       order_num, del_flag)
     values (#{deptId,jdbcType=BIGINT}, #{parentId,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, 
       #{orderNum,jdbcType=INTEGER}, #{delFlag,jdbcType=TINYINT})
   </insert>
-  <insert id="insertSelective" parameterType="com.example.demo.model.SysDept" >
+  <insert id="insertSelective" parameterType="pep.pesoftware.fwf.repository.model.SysDept" >
     insert into sys_dept
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="deptId != null" >
@@ -64,7 +64,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.example.demo.model.SysDept" >
+  <update id="updateByPrimaryKeySelective" parameterType="pep.pesoftware.fwf.repository.model.SysDept" >
     update sys_dept
     <set >
       <if test="parentId != null" >
@@ -82,7 +82,7 @@
     </set>
     where dept_id = #{deptId,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.example.demo.model.SysDept" >
+  <update id="updateByPrimaryKey" parameterType="pep.pesoftware.fwf.repository.model.SysDept" >
     update sys_dept
     set parent_id = #{parentId,jdbcType=BIGINT},
       name = #{name,jdbcType=VARCHAR},

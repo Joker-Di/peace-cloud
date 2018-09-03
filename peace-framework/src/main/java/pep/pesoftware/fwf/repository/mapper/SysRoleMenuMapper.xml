@@ -19,13 +19,13 @@
     delete from sys_role_menu
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.example.demo.model.SysRoleMenu" >
+  <insert id="insert" parameterType="pep.pesoftware.fwf.repository.model.SysRoleMenu" >
     insert into sys_role_menu (id, role_id, menu_id
       )
     values (#{id,jdbcType=BIGINT}, #{roleId,jdbcType=BIGINT}, #{menuId,jdbcType=BIGINT}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.example.demo.model.SysRoleMenu" >
+  <insert id="insertSelective" parameterType="pep.pesoftware.fwf.repository.model.SysRoleMenu" >
     insert into sys_role_menu
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -50,7 +50,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.example.demo.model.SysRoleMenu" >
+  <update id="updateByPrimaryKeySelective" parameterType="pep.pesoftware.fwf.repository.model.SysRoleMenu" >
     update sys_role_menu
     <set >
       <if test="roleId != null" >
@@ -62,7 +62,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.example.demo.model.SysRoleMenu" >
+  <update id="updateByPrimaryKey" parameterType="pep.pesoftware.fwf.repository.model.SysRoleMenu" >
     update sys_role_menu
     set role_id = #{roleId,jdbcType=BIGINT},
       menu_id = #{menuId,jdbcType=BIGINT}

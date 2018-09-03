@@ -30,7 +30,7 @@
     delete from sys_dict
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.example.demo.model.SysDict" >
+  <insert id="insert" parameterType="pep.pesoftware.fwf.repository.model.SysDict" >
     insert into sys_dict (id, name, value, 
       type, description, sort, 
       parent_id, create_by, create_date, 
@@ -42,7 +42,7 @@
       #{updateBy,jdbcType=BIGINT}, #{updateDate,jdbcType=TIMESTAMP}, #{remarks,jdbcType=VARCHAR}, 
       #{delFlag,jdbcType=CHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.example.demo.model.SysDict" >
+  <insert id="insertSelective" parameterType="pep.pesoftware.fwf.repository.model.SysDict" >
     insert into sys_dict
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -127,7 +127,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.example.demo.model.SysDict" >
+  <update id="updateByPrimaryKeySelective" parameterType="pep.pesoftware.fwf.repository.model.SysDict" >
     update sys_dict
     <set >
       <if test="name != null" >
@@ -169,7 +169,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.example.demo.model.SysDict" >
+  <update id="updateByPrimaryKey" parameterType="pep.pesoftware.fwf.repository.model.SysDict" >
     update sys_dict
     set name = #{name,jdbcType=VARCHAR},
       value = #{value,jdbcType=VARCHAR},

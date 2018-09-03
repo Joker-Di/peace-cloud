@@ -31,7 +31,7 @@
     delete from sys_task
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.example.demo.model.SysTask" >
+  <insert id="insert" parameterType="pep.pesoftware.fwf.repository.model.SysTask" >
     insert into sys_task (id, cron_expression, method_name, 
       is_concurrent, description, update_by, 
       bean_class, create_date, job_status, 
@@ -43,7 +43,7 @@
       #{jobGroup,jdbcType=VARCHAR}, #{updateDate,jdbcType=TIMESTAMP}, #{createBy,jdbcType=VARCHAR}, 
       #{springBean,jdbcType=VARCHAR}, #{jobName,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.example.demo.model.SysTask" >
+  <insert id="insertSelective" parameterType="pep.pesoftware.fwf.repository.model.SysTask" >
     insert into sys_task
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -134,7 +134,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.example.demo.model.SysTask" >
+  <update id="updateByPrimaryKeySelective" parameterType="pep.pesoftware.fwf.repository.model.SysTask" >
     update sys_task
     <set >
       <if test="cronExpression != null" >
@@ -179,7 +179,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.example.demo.model.SysTask" >
+  <update id="updateByPrimaryKey" parameterType="pep.pesoftware.fwf.repository.model.SysTask" >
     update sys_task
     set cron_expression = #{cronExpression,jdbcType=VARCHAR},
       method_name = #{methodName,jdbcType=VARCHAR},

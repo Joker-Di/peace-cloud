@@ -20,13 +20,13 @@
     delete from cms_file
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.example.demo.model.CmsFile" >
+  <insert id="insert" parameterType="pep.pesoftware.fwf.repository.model.CmsFile" >
     insert into cms_file (id, type, url, 
       create_date)
     values (#{id,jdbcType=BIGINT}, #{type,jdbcType=INTEGER}, #{url,jdbcType=VARCHAR}, 
       #{createDate,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.example.demo.model.CmsFile" >
+  <insert id="insertSelective" parameterType="pep.pesoftware.fwf.repository.model.CmsFile" >
     insert into cms_file
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -57,7 +57,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.example.demo.model.CmsFile" >
+  <update id="updateByPrimaryKeySelective" parameterType="pep.pesoftware.fwf.repository.model.CmsFile" >
     update cms_file
     <set >
       <if test="type != null" >
@@ -72,7 +72,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.example.demo.model.CmsFile" >
+  <update id="updateByPrimaryKey" parameterType="pep.pesoftware.fwf.repository.model.CmsFile" >
     update cms_file
     set type = #{type,jdbcType=INTEGER},
       url = #{url,jdbcType=VARCHAR},

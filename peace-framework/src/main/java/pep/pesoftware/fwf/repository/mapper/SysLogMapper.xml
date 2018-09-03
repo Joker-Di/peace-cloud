@@ -25,7 +25,7 @@
     delete from sys_log
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.example.demo.model.SysLog" >
+  <insert id="insert" parameterType="pep.pesoftware.fwf.repository.model.SysLog" >
     insert into sys_log (id, user_id, username, 
       operation, time, method, 
       params, ip, gmt_create
@@ -35,7 +35,7 @@
       #{params,jdbcType=VARCHAR}, #{ip,jdbcType=VARCHAR}, #{gmtCreate,jdbcType=TIMESTAMP}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.example.demo.model.SysLog" >
+  <insert id="insertSelective" parameterType="pep.pesoftware.fwf.repository.model.SysLog" >
     insert into sys_log
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -96,7 +96,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.example.demo.model.SysLog" >
+  <update id="updateByPrimaryKeySelective" parameterType="pep.pesoftware.fwf.repository.model.SysLog" >
     update sys_log
     <set >
       <if test="userId != null" >
@@ -126,7 +126,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.example.demo.model.SysLog" >
+  <update id="updateByPrimaryKey" parameterType="pep.pesoftware.fwf.repository.model.SysLog" >
     update sys_log
     set user_id = #{userId,jdbcType=BIGINT},
       username = #{username,jdbcType=VARCHAR},
