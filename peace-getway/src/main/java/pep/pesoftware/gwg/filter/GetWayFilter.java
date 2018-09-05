@@ -37,9 +37,8 @@ public class GetWayFilter extends ZuulFilter {
         RequestContext context = RequestContext.getCurrentContext();
         HttpServletRequest request = context.getRequest();
         String uri = request.getRequestURI();
-        if (("/api/web/peace/validateEmail".equals(uri) || "/api/web/peace/confirm".equals(uri)
-                ||"/api/web/peace/replyPwd".equals(uri)
-                || "/api/web/peace/register".equals(uri) || "/api/web/peace".equals(uri) || "/api/admin/peace".equals(uri))
+        //此处可以判断放开多个url
+        if (("/api/web/peace".equals(uri))
                 && Http.HttpMethod.POST.toString().equals(request.getMethod())) {
             return null;
         }
