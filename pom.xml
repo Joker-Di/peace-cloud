@@ -16,10 +16,6 @@
         <module>peace-common</module>
         <module>peace-framework</module>
         <module>peace-web</module>
-        <module>peace-eureka-client</module>
-        <module>peace-ribbon</module>
-        <module>peace-feign</module>
-        <module>peace-zuul</module>
     </modules>
 
     <build>

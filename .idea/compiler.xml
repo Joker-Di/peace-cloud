@@ -8,19 +8,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="peace-common" />
         <module name="peace-config" />
-        <module name="peace-config-client" />
         <module name="peace-eureka" />
-        <module name="peace-eureka-client" />
-        <module name="peace-feign" />
         <module name="peace-framework" />
         <module name="peace-getway" />
-        <module name="peace-ribbon" />
         <module name="peace-web" />
-        <module name="peace-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="p-eureka" target="1.8" />
+      <module name="peace-config-client" target="1.8" />
+      <module name="peace-eureka-client" target="1.8" />
+      <module name="peace-feign" target="1.8" />
+      <module name="peace-ribbon" target="1.8" />
+      <module name="peace-zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
