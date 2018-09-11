@@ -15,5 +15,5 @@ spring:
         git:
           uri: https://github.com/Joker-Di/peace-cloud.git
           search-paths: peace-config/src/main/resources/{application}
-          username: Joker-Di
-          password: dong2619
+          username:
+          password:

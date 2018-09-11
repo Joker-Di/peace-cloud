@@ -42,13 +42,13 @@ public class LoginServiceImpl implements ILoginService {
         if (StringUtils.isBlank(username) || StringUtils.isBlank(password)) {
             return null;
         }
-        String passWord;
-        try {
-            passWord = DigestUtils.md5DigestAsHex(password.getBytes(UserConstant.USER_STRING_CHARSET));
-        } catch (UnsupportedEncodingException e) {
-            log.error(UserConstant.HANDLE_ERROR, e);
-            return null;
-        }
+//        String passWord;
+//        try {
+//            passWord = DigestUtils.md5DigestAsHex(password.getBytes(UserConstant.USER_STRING_CHARSET));
+//        } catch (UnsupportedEncodingException e) {
+//            log.error(UserConstant.HANDLE_ERROR, e);
+//            return null;
+//        }
         SysUser sysUser = sysUserMapper.selectByPrimaryKey(Long.valueOf("1"));
         String userRedisKey = UserConstant.USER_SESSION_KEY.concat(sysUser.getUserId().toString());
             redisUtil.set(userRedisKey, sysUser.getUserId().toString());
