@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import org.springframework.util.DigestUtils;
 import pep.pesoftware.coc.jwt.JWTUserInfo;
 import pep.pesoftware.fwf.redis.RedisClient;
 import pep.pesoftware.fwf.repository.mapper.SysUserMapper;
@@ -15,8 +14,6 @@ import pep.pesoftware.fwf.util.JwtTokenUtil;
 import pep.pesoftware.wew.common.constant.UserConstant;
 import pep.pesoftware.wew.form.SysUserForm;
 import pep.pesoftware.wew.service.ILoginService;
-
-import java.io.UnsupportedEncodingException;
 
 @Service
 @Slf4j

@@ -1,5 +1,7 @@
 package pep.pesoftware.coc.util;
 
+import pep.pesoftware.coc.constant.PeaceConstant;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
@@ -9,6 +11,9 @@ import java.util.Random;
  * 生成随机数工具类
  */
 public class GenerateIdUtil {
+    public static void main(String[] args) {
+        System.out.println(GenerateIdUtil.randomAlphanumeric(PeaceConstant.KEY_RANDOM_COUNT, PeaceConstant.DATA_FORMAT_DATA_TIME_SHORT));
+    }
 
     /**
      * 随机数类
